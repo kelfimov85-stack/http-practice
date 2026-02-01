@@ -10,7 +10,7 @@ namespace http_practice
     internal class Program
     {
         private static UserService _userService;
-        private static PostService _postsService;
+        private static PostService _postService;
 
         static async Task Main(string[] args)
         {
@@ -25,9 +25,9 @@ namespace http_practice
                 Console.WriteLine($"Email: {user.Email}");
             }
 
-            _postsService = new PostsService();
+            _postService = new PostService();
 
-            var posts = await _postsService.GetAllAsync();
+            var posts = await _postService.GetAllAsync();
 
             foreach (var post in posts)
             {
