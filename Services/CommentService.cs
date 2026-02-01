@@ -17,7 +17,7 @@ namespace http_practice.Services
         {
             try
             {
-                return await _http.PostAsJsonAsync<PostDto>("/api/comments", comment);
+                return await _http.PostAsJsonAsync<CommentDto>("/api/comments", comment);
             }
             catch (HttpRequestException ex)
             {
@@ -34,7 +34,7 @@ namespace http_practice.Services
         {
             try
             {
-                return await _http.GetFromJsonAsync<List<PostDto>>("/api/comments");
+                return await _http.GetFromJsonAsync<List<CommentDto>>("/api/comments");
             }
             catch (HttpRequestException ex)
             {
