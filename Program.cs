@@ -10,7 +10,7 @@ namespace http_practice
     internal class Program
     {
         private static UserService _userService;
-        private static PostsService _postsService;
+        private static PostService _postsService;
 
         static async Task Main(string[] args)
         {

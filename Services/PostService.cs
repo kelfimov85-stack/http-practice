@@ -33,7 +33,7 @@ namespace http_practice.Services
             }
         }
 
-        public async Task<HttpResponceMessage> CreateAsync(PostDto post)
+        public async Task<HttpResponseMessage> CreateAsync(PostDto post)
         {
             try
             {
